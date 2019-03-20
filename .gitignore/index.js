@@ -21,7 +21,7 @@ bot.on("ready", () => {
     }, 4000);
 });
 
-bot.login('NTQ4OTM2NDgzMjEwMjY0NTc2.D1MocQ.JMZQrQIB8AuKaLAiCwwr7pUOias');
+bot.login(process.env.TOKEN);
 
 bot.on('guildMemberAdd', member => {
   const welcomechannel = member.guild.channels.find('id', '536811661814792192')//channel #arrivé
